@@ -1,0 +1,142 @@
+.tile {
+  background-color: white;
+  margin-bottom: 3%;
+  padding-bottom: 15px;
+  display: inline-block;
+  font-size: 14pt;
+  cursor: default;
+  position: relative;
+  border-radius: 10px;
+  width: fit-content;
+  vertical-align: top;
+  z-index: 200;
+}
+
+.tile:not(.active) .info {
+  display: none;
+}
+
+.tile.active {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.tile:nth-child(2).active{
+  margin-left: 0px;
+}
+
+.tile .preview,
+.tile .head,
+.tile:not(.active) {
+  min-width: 200px;
+  max-width: 200px;
+}
+
+.tile .preview {
+  display: inline-block;
+}
+
+.tile .info {
+  max-height: 96%;
+  max-width: 76%;
+  display: inline-block;
+  color: #fff;
+  vertical-align: top;
+  padding-top: 10px;
+  position: relative;
+}
+
+.tile .row {
+  padding-top: 0px;
+}
+
+.tile .head {
+  min-height: 200px;
+  background-repeat: no-repeat;
+}
+
+.tile .divider {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin-left: 10%;
+}
+
+#econ_grow .head {
+  background-image: url(../images/tile-ac-01-ega.jpg);
+}
+
+#econ_impact .head {
+  background-image: url(../images/tile-ac-02-eia.jpg);
+}
+
+#labor .head {
+  background-image: url(../images/tile-ac-03-la.jpg);
+}
+
+#trade .head {
+  background-image: url(../images/tile-ac-04-tfa.jpg);
+}
+
+.tile .preview p,
+.tile h2 {
+  padding: 10px 20px
+}
+
+.tile h2 {
+  color: #123056;
+  font-family: Bentham;
+  font-weight: normal;
+  margin: 0px;
+}
+
+.tile .preview p {
+  color: black;
+}
+
+.tile .preview-content {
+  margin-top: -50px;
+}
+
+.tile .preview a,
+.info ul {
+  padding-left: 20px;
+}
+
+.tile .preview a {
+  font-size: 12pt;
+  color: #00adef;
+  position: absolute;
+  bottom: 0px;
+  padding-bottom: 10px;
+}
+
+.info h3 {
+  text-transform: uppercase;
+  font-size: 14pt;
+}
+
+.info h3::after {
+  content: "";
+  display: block;
+  min-height: 2px;
+  width: 100%;
+  border-bottom: 2px solid rgb(62, 95, 140);
+}
+
+.info .column {
+  min-width: 47%;
+  max-width: 47%;
+}
+
+.info h3,
+.info .column ul,
+.info .column p {
+  margin-top: 0px;
+}
+
+.tile .tile-blur {
+  position: absolute;
+  top: 0px;
+  padding: inherit;
+  border-radius: 10px;
+}

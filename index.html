@@ -1,1 +1,376 @@
-"Hello World" 
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Knoema_test</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/grid.css">
+    <link rel="stylesheet" href="assets/styles/tile.css">
+
+    <script src="assets/scripts/main.js"></script>
+
+  </head>
+  <body>
+
+    <div class="grid">
+
+      <!-- Header -->
+      <div class="row header">
+
+        <div class="column">
+          <span>Company</span>
+        </div>
+        <div class="column">
+          <span>Global Economis Team</span>
+        </div>
+
+        <div class="sticky-top support clickable" title="Send email to support">
+          <a href="mailto:support@company.com?subject=Test%20subject&body=Test%20body">
+            <i class="icon mail"></i>
+            <div>Support</div>
+          </a>
+        </div>
+      </div>
+      <!-- Header End -->
+
+      <!-- Top Menu -->
+      <div class="row top-menu">
+        <div class="column active">
+          <span>Home</span>
+        </div>
+
+        <div class="column">
+          <span>Knowlege</span>
+        </div>
+
+        <div class="column">
+          <span>Experts</span>
+        </div>
+
+        <div class="column">
+          <span title="Sorry, this feature still not work :(">Tools and Databases</span>
+        </div>
+
+        <div class="column fluid right" title="Find more in google">
+          <div class="search">
+            <i class="icon search clickable"></i>
+            <input id="search-input" placeholder="Search for data, statistics and visualization">
+          </div>
+          <script type="text/javascript">
+            this.configurateInput();
+          </script>
+        </div>
+
+      </div>
+      <!-- Top Menu End -->
+
+      <!-- Content -->
+      <div class="row content">
+        <h2 class="content-header"> Analytical Capabilities </h2>
+
+        <div class="tile">
+          <div id="econ_grow" class="preview">
+            <div class="head">
+              <h2>Economic Growth Analytics</h2>
+            </div>
+
+            <div class="preview-content">
+              <div class="divider"></div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+              <a>READ MORE <i class="right-row"></i> </a>
+            </div>
+          </div>
+
+          <div class="info">
+            <div class="grid">
+              <div class="row">
+                  <div class="row caption">
+                      <div class="column">
+                          <h3>Descript</h3>
+                      </div>
+                      <div class="column">
+                        <h3>Datasets, models, tools</h3>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="column">
+                          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      </div>
+                      <div class="column">
+                        <ul>
+                          <li>First</li>
+                          <li>Second</li>
+                          <li>Last</li>
+                        </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="row caption">
+                <h3>Client application</h3>
+              </div>
+              <div class="row">
+                  <div class="row caption">
+                      <div class="column"><h3>market planning <br> (private sector)</h3></div>
+                      <div class="column"><h3>economic development <br> (public sector)</h3></div>
+                  </div>
+                  <div class="row">
+                    <div class="column">
+                        <ul>
+                          <li>First</li>
+                          <li>Second</li>
+                          <li>Last</li>
+                        </ul>
+                      </div>
+                      <div class="column">
+                        <ul>
+                          <li>First</li>
+                          <li>Second</li>
+                          <li>Last</li>
+                        </ul>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tile">
+          <div id="econ_impact" class="preview">
+            <div class="head">
+              <h2>Economic Impact Analytics</h2>
+            </div>
+
+            <div class="preview-content">
+              <div class="divider"></div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+              <a>READ MORE <i class="right-row"></i> </a>
+            </div>
+          </div>
+
+          <div class="info">
+              <div class="grid">
+                <div class="row">
+                    <div class="row caption">
+                        <div class="column">
+                            <h3>Descript</h3>
+                        </div>
+                        <div class="column">
+                          <h3>Datasets, models, tools</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="column">
+                          <ul>
+                            <li>First</li>
+                            <li>Second</li>
+                            <li>Last</li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row caption">
+                  <h3>Client application</h3>
+                </div>
+                <div class="row">
+                    <div class="row caption">
+                        <div class="column"><h3>market planning <br> (private sector)</h3></div>
+                        <div class="column"><h3>economic development <br> (public sector)</h3></div>
+                    </div>
+                    <div class="row">
+                      <div class="column">
+                          <ul>
+                            <li>First</li>
+                            <li>Second</li>
+                            <li>Last</li>
+                          </ul>
+                        </div>
+                        <div class="column">
+                          <ul>
+                            <li>First</li>
+                            <li>Second</li>
+                            <li>Last</li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="tile">
+          <div id="labor" class="preview">
+            <div class="head">
+              <h2>Labor Analytics</h2>
+            </div>
+
+            <div class="preview-content">
+              <div class="divider"></div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+              <a>READ MORE <i class="right-row"></i> </a>
+            </div>
+          </div>
+
+          <div class="info">
+            <div class="grid">
+              <div class="row">
+                  <div class="row caption">
+                      <div class="column">
+                          <h3>Descript</h3>
+                      </div>
+                      <div class="column">
+                        <h3>Datasets, models, tools</h3>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="column">
+                          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      </div>
+                      <div class="column">
+                        <ul>
+                            <li>First</li>
+                            <li>Second</li>
+                            <li>Third</li>
+                            <li>Fourth</li>
+                            <li>Fifth</li>
+                            <li>Sixth</li>
+                        </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="row caption">
+                <h3>Client application</h3>
+              </div>
+              <div class="row">
+                  <div class="row caption">
+                      <div class="column"><h3>market planning <br> (private sector)</h3></div>
+                      <div class="column"><h3>economic development <br> (public sector)</h3></div>
+                  </div>
+                  <div class="row">
+                    <div class="column">
+                        <ul>
+                          <li>First</li>
+                          <li>Second</li>
+                          <li>Last</li>
+                        </ul>
+                      </div>
+                      <div class="column">
+                        <ul>
+                          <li>First</li>
+                          <li>Second</li>
+                          <li>Last</li>
+                        </ul>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tile">
+          <div id="trade" class="preview">
+            <div class="head">
+              <h2>Trade and Flows Analytics</h2>
+            </div>
+
+            <div class="preview-content">
+              <div class="divider"></div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+              <a>READ MORE <i class="right-row"></i> </a>
+            </div>
+          </div>
+
+          <div class="info">
+            <div class="grid">
+              <div class="row">
+                  <div class="row caption">
+                      <div class="column">
+                          <h3>Descript</h3>
+                      </div>
+                      <div class="column">
+                        <h3>Datasets, models, tools</h3>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="column">
+                          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      </div>
+                      <div class="column">
+                        <ul>
+                          <li>First</li>
+                          <li>Second</li>
+                          <li>Last</li>
+                        </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="row caption">
+                <h3>Client application</h3>
+              </div>
+              <div class="row">
+                  <div class="row caption">
+                      <div class="column"><h3>market planning <br> (private sector)</h3></div>
+                      <div class="column"><h3>economic development <br> (public sector)</h3></div>
+                  </div>
+                  <div class="row">
+                    <div class="column">
+                        <ul>
+                          <li>First</li>
+                          <li>Second</li>
+                          <li>Third</li>
+                          <li>Fourth</li>
+                          <li>Fifth</li>
+                        </ul>
+                      </div>
+                      <div class="column">
+                        <ul>
+                          <li>First</li>
+                          <li>Second</li>
+                          <li>Last</li>
+                        </ul>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script type="text/javascript">
+        this.configurateHeightTiles();
+      </script>
+      <!-- Content end -->
+
+      <!-- Footer -->
+      <div class="row footer">
+        <div class="align-bottom">
+            <div class="column">
+              <span>Contacts</span>
+            </div>
+            <div class="column">
+              <span>Privacy policy</span>
+            </div>
+            <div class="column">
+              <span>Terms & Conditions</span>
+            </div>
+
+            <div class="column fluid right">© 1990 - 2018 Company</div>
+        </div>
+      </div>
+      <!-- Footer end -->
+
+    </div>
+  </body>
+</html>

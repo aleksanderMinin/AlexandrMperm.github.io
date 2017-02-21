@@ -1,0 +1,163 @@
+body {
+  margin: 0px;
+  background-color: rgb(6, 31, 62);
+  height: 100%;
+  color: white;
+  font-family: Helvetica, Arial;
+  cursor: default;
+}
+
+i {
+  vertical-align: text-bottom;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+a {
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 24pt;
+}
+
+.header {
+  background-image: url(../images/header-bg.png);
+  background-repeat: repeat-y;
+  border-top: 3px solid rgb(61, 96, 140);
+  height: 4%;
+  background-color: rgb(6, 31, 62);
+}
+
+.sticky-top {
+  position: absolute;
+  top: 0px;
+}
+
+.sticky-top * {
+  display: inline-block;
+}
+
+.sticky-top.support {
+  background-color: rgb(52, 90, 126);
+  border: 4px solid rgb(52, 90, 126);
+  border-radius: 5px;
+  right: 4%;
+  padding: 0px 5px 1px 5px;
+}
+
+.support a {
+  color: white;
+  text-decoration: none;
+}
+
+i.mail {
+  background-image: url(../images/topmenu-icons-sprite.png);
+  width: 16px;
+  height: 17px;
+  margin-top: 4px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.row.top-menu {
+  color: rgb(179, 185, 207);
+  background-color: rgb(18, 48, 86);
+  height: 3%;
+  padding: 1% 4%;
+}
+
+.top-menu span,
+.header span,
+.footer span {
+  cursor: pointer;
+}
+
+.top-menu div.active {
+  color: white;
+}
+
+div.search {
+ background-color: rgb(6, 31, 62);
+ border: 2px solid rgb(63, 94, 138);
+ border-radius: 5px;
+ padding: 3px 3px;
+ vertical-align: baseline;
+ margin-top: -1.5%;
+}
+
+.icon.search {
+  height: 20px;
+  width: 20px;
+  background-image: url(../images/search-btn.png);
+  margin-right: 3px;
+}
+
+.search input {
+  display: inline-block;
+  border: none;
+  background-color: inherit;
+  height: 100%;
+  color: white;
+  font-size: 12pt;
+}
+
+.search input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+}
+
+.search input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+}
+
+.search input::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+}
+
+.search input:focus {
+  border: 0px solid white;
+  outline: none;
+}
+
+.content {
+  height: 69vh;
+  background-image: url(../images/bg-x2.jpg);
+  background-position: center top;
+  background-size: cover;
+  min-width: max-content;
+  min-width: -moz-max-content;
+  min-width: -webkit-max-content;
+  min-width: -o-max-content
+}
+
+.content-header {
+  font-weight: bold;
+  margin: 0px;
+}
+
+.content-header::after {
+  content: "";
+  display: block;
+  padding: 2%;
+}
+
+.footer {
+  max-height: 3%;
+  min-height: 3%;
+  background-color: rgb(6, 31, 62);
+  padding-bottom: 10px;
+}
+
+.align-bottom {
+  margin-bottom: 10px;
+  width: inherit;
+}
+
+i.right-row {
+  width: 8px;
+  height: 16px;
+  background-image: url(../images/ico-arrow-readmore.png);
+}
